@@ -4,154 +4,282 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Toshiko Sushi — Catálogo Digital</title>
-<meta name="description" content="Propuesta de catálogo digital interactivo para Toshiko Sushi, Cali.">
-<link rel="icon" href="data:,">
+<meta name="description" content="Catálogo digital de Toshiko Sushi, Cali. Descubre nuestros rolls, promociones y favoritos, y pide directo por WhatsApp, Rappi o DiDi.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,480;0,9..144,600;1,9..144,420&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- ============ TOP BAR ============ -->
-<header class="topbar">
-  <div class="topbar-inner">
-    <span class="topbar-mark">Toshiko Sushi</span>
-    <span class="topbar-tag">Propuesta de catálogo digital</span>
-  </div>
-</header>
+<div class="device">
 
-<!-- ============ HERO ============ -->
-<section class="hero" id="inicio">
-  <div class="hero-glow"></div>
-  <div class="hero-content">
-    <div class="hero-logo" aria-hidden="true">
-      <span>Logo</span>
+  <!-- BARRA SUPERIOR -->
+  <header class="topbar">
+    <div class="topbar__mark" aria-hidden="true">TS</div>
+    <nav class="topbar__nav">
+      <a href="#menu">Menú</a>
+      <a href="#promos">Promos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- PÁGINA 1 — PORTADA -->
+  <section class="hero" id="inicio">
+    <div class="hero__photo" role="img" aria-label="Fotografía principal de un plato de sushi de Toshiko">
+      <span class="ph-tag">Fotografía de portada — reemplazar por foto real de Toshiko</span>
     </div>
-    <p class="hero-eyebrow">Cocina japonesa contemporánea · Cali</p>
-    <h1 class="hero-title">Toshiko&nbsp;Sushi</h1>
-    <p class="hero-sub">Un catálogo digital que conserva tu identidad —fondo oscuro, dorado y tu logo— pero pensado para vender: que tus clientes pidan directo desde el celular, sin salir de WhatsApp o Instagram.</p>
-    <a href="#propuesta" class="hero-cta">Ver la propuesta</a>
-  </div>
-  <div class="hero-scroll" aria-hidden="true">
-    <span></span>
-  </div>
-</section>
-
-<!-- ============ INTRO / VALOR ============ -->
-<section class="intro" id="propuesta">
-  <div class="intro-inner">
-    <h2 class="section-heading">Una herramienta de venta, no un documento</h2>
-    <p class="section-lead">Hoy tu carta vive en fotos sueltas y mensajes de WhatsApp. Este catálogo la convierte en una experiencia que el cliente recorre solo, con una mano, y que lo lleva directo a pedir.</p>
-    <div class="value-grid">
-      <div class="value-card">
-        <div class="value-icon" aria-hidden="true">
-          <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.4"/><path d="M13 20h14M20 13v14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-        </div>
-        <h3>Encuentra rápido</h3>
-        <p>Categorías claras y fotografías grandes para que decidir tome segundos, no minutos.</p>
+    <div class="hero__content">
+      <div class="hero__logo" aria-hidden="true">
+        <span>TS</span>
+        <em>logo real aquí</em>
       </div>
-      <div class="value-card">
-        <div class="value-icon" aria-hidden="true">
-          <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="10" width="24" height="20" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M8 16h24" stroke="currentColor" stroke-width="1.4"/><path d="M14 22h5M14 26h9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-        </div>
-        <h3>Precios siempre visibles</h3>
-        <p>Nada de buscar en la descripción: cada plato muestra su valor con claridad.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-icon" aria-hidden="true">
-          <svg viewBox="0 0 40 40" fill="none"><path d="M12 20l6 6 10-12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.4"/></svg>
-        </div>
-        <h3>Un toque para pedir</h3>
-        <p>WhatsApp, Rappi, DiDi e Instagram, siempre a un botón de distancia.</p>
-      </div>
+      <h1 class="hero__title">Toshiko<br><i>Sushi</i></h1>
+      <p class="hero__tag">Sushi de autor, hecho al momento — Cali</p>
+      <a class="btn btn--gold" href="#navegacion">Ver el catálogo</a>
     </div>
-  </div>
-</section>
+    <div class="hero__scroll" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
 
-<!-- ============ SHOWCASE / TELEFONO INTERACTIVO ============ -->
-<section class="showcase" id="catalogo">
-  <div class="showcase-inner">
-    <h2 class="section-heading">Así se siente en el celular</h2>
-    <p class="section-lead">Recorre el catálogo tal como lo haría tu cliente. Toca cada pestaña para ver la pantalla.</p>
+  <!-- PÁGINA 2 — BIENVENIDA / NAVEGACIÓN -->
+  <section class="welcome" id="navegacion">
+    <p class="eyebrow">Bienvenido</p>
+    <h2 class="section-title">Un buen sushi<br>empieza por lo simple</h2>
+    <p class="welcome__text">
+      En Toshiko preparamos cada rollo al momento, con producto fresco y
+      presentaciones pensadas para compartir. Este catálogo te ayuda a
+      encontrar lo que se te antoja y pedirlo en segundos.
+    </p>
 
-    <div class="showcase-body">
-
-      <!-- Panel de descripcion, sincronizado con JS -->
-      <div class="showcase-text">
-        <span class="screen-count"><span id="screenIndex">1</span> / <span id="screenTotal">6</span></span>
-        <h3 id="screenTitle">Portada</h3>
-        <p id="screenDesc">La primera impresión. Una fotografía protagonista y tu logo, sin ruido visual, para transmitir en un segundo que Toshiko es un restaurante serio y cuidado.</p>
-        <div class="showcase-nav">
-          <button type="button" id="prevScreen" class="nav-arrow" aria-label="Pantalla anterior">←</button>
-          <div class="screen-dots" id="screenDots"></div>
-          <button type="button" id="nextScreen" class="nav-arrow" aria-label="Pantalla siguiente">→</button>
-        </div>
+    <div class="cta-banner">
+      <div>
+        <strong>¿Ya sabes qué quieres?</strong>
+        <span>Pide directo desde aquí</span>
       </div>
+      <a class="btn btn--gold btn--sm" href="#contacto">Pedir ahora</a>
+    </div>
 
-      <!-- Marco de telefono -->
-      <div class="phone-wrap">
-        <div class="phone">
-          <div class="phone-notch"></div>
-          <div class="phone-screen" id="phoneScreen">
-            <!-- las pantallas se inyectan por JS -->
+    <p class="categories__label">Categorías</p>
+    <div class="categories">
+      <a href="#promos">Promociones</a>
+      <a href="#menu">Special Rolls</a>
+      <a href="#menu">Fusión</a>
+      <a href="#menu">California</a>
+      <a href="#menu">Hot Rolls</a>
+      <a href="#menu">Sushi Burger</a>
+      <a href="#menu">Gohan</a>
+      <a href="#menu">Hand Roll</a>
+      <a href="#menu">Ceviches</a>
+      <a href="#menu">Bebidas</a>
+    </div>
+  </section>
+
+  <!-- SECCIÓN FAVORITOS -->
+  <section class="favorites" id="favoritos">
+    <p class="eyebrow">Los más pedidos</p>
+    <h2 class="section-title">Favoritos Toshiko</h2>
+    <p class="section-sub">Espacio reservado para los productos reales más vendidos — pendiente de confirmar con el restaurante.</p>
+
+    <div class="rail">
+      <article class="fav-card">
+        <div class="fav-card__photo"><span class="ph-tag ph-tag--sm">Foto</span></div>
+        <span class="badge badge--gold">Favorito</span>
+        <h3>Nombre del producto</h3>
+        <p class="price">$ XX.XXX</p>
+      </article>
+      <article class="fav-card">
+        <div class="fav-card__photo"><span class="ph-tag ph-tag--sm">Foto</span></div>
+        <span class="badge badge--gold">Favorito</span>
+        <h3>Nombre del producto</h3>
+        <p class="price">$ XX.XXX</p>
+      </article>
+      <article class="fav-card">
+        <div class="fav-card__photo"><span class="ph-tag ph-tag--sm">Foto</span></div>
+        <span class="badge badge--gold">Favorito</span>
+        <h3>Nombre del producto</h3>
+        <p class="price">$ XX.XXX</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SECCIÓN PROMOCIONES -->
+  <section class="promos" id="promos">
+    <p class="eyebrow">Por tiempo limitado</p>
+    <h2 class="section-title">Promociones activas</h2>
+
+    <article class="promo-card">
+      <div class="promo-card__photo"><span class="ph-tag">Foto de la promoción</span></div>
+      <div class="promo-card__body">
+        <span class="badge badge--outline">Promo</span>
+        <h3>Nombre de la promoción</h3>
+        <p class="promo-card__desc">Descripción breve de lo que incluye esta promoción.</p>
+        <div class="promo-card__row">
+          <div>
+            <p class="price">$ XX.XXX</p>
+            <p class="save">Ahorras $ XX.XXX</p>
           </div>
+          <a class="btn btn--gold btn--sm" href="#contacto">Pedir</a>
         </div>
       </div>
+    </article>
 
+    <article class="promo-card">
+      <div class="promo-card__photo"><span class="ph-tag">Foto de la promoción</span></div>
+      <div class="promo-card__body">
+        <span class="badge badge--outline">Promo</span>
+        <h3>Nombre de la promoción</h3>
+        <p class="promo-card__desc">Descripción breve de lo que incluye esta promoción.</p>
+        <div class="promo-card__row">
+          <div>
+            <p class="price">$ XX.XXX</p>
+            <p class="save">Ahorras $ XX.XXX</p>
+          </div>
+          <a class="btn btn--gold btn--sm" href="#contacto">Pedir</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- PÁGINAS DE PRODUCTOS -->
+  <section class="menu" id="menu">
+    <p class="eyebrow">Categoría destacada</p>
+    <h2 class="section-title">Special Rolls</h2>
+    <p class="section-sub">Vista de ejemplo — cada categoría del menú se presentará con esta misma estructura de tarjetas.</p>
+
+    <article class="product-card">
+      <div class="product-card__photo"><span class="ph-tag">Foto del producto</span></div>
+      <div class="product-card__body">
+        <div class="product-card__tags">
+          <span class="badge badge--gold">Nuevo</span>
+        </div>
+        <h3>Nombre del roll</h3>
+        <p class="product-card__desc">Breve descripción de los ingredientes principales.</p>
+        <p class="price">$ XX.XXX</p>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-card__photo"><span class="ph-tag">Foto del producto</span></div>
+      <div class="product-card__body">
+        <div class="product-card__tags">
+          <span class="badge badge--outline">Premium</span>
+        </div>
+        <h3>Nombre del roll</h3>
+        <p class="product-card__desc">Breve descripción de los ingredientes principales.</p>
+        <p class="price">$ XX.XXX</p>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-card__photo"><span class="ph-tag">Foto del producto</span></div>
+      <div class="product-card__body">
+        <div class="product-card__tags">
+          <span class="badge badge--outline">Vegetariano</span>
+        </div>
+        <h3>Nombre del roll</h3>
+        <p class="product-card__desc">Breve descripción de los ingredientes principales.</p>
+        <p class="price">$ XX.XXX</p>
+      </div>
+    </article>
+
+    <a class="btn btn--line btn--block" href="#contacto">Ver el resto del menú</a>
+  </section>
+
+  <!-- PÁGINA FINAL — LISTO PARA PEDIR -->
+  <section class="contact" id="contacto">
+    <p class="eyebrow">Último paso</p>
+    <h2 class="section-title section-title--light">¿Listo para pedir?</h2>
+    <p class="section-sub section-sub--light">Elige cómo prefieres hacer tu pedido.</p>
+
+    <div class="contact-grid">
+      <a class="contact-item" href="#" target="_blank" rel="noopener">
+        <span class="contact-item__icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 0 0-7.8 13.4L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="currentColor" stroke-width="1.4"/><path d="M8.5 8.7c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.4.2.5.6 1.4.6 1.5.1.1.1.3 0 .4-.1.2-.2.3-.3.4-.1.1-.3.3-.4.4-.1.1-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1.2-.2.7-.8.9-1.1.2-.2.4-.2.6-.1.2.1 1.4.7 1.7.8.3.1.4.2.5.3.1.2.1.9-.2 1.5-.3.6-1.6 1.3-2.2 1.3-.6 0-1.3.1-4.3-1.8-2.4-1.5-3.6-3.9-3.7-4.1-.1-.2-.9-1.3-.9-2.5 0-1.2.6-1.7.8-2Z" fill="currentColor"/></svg>
+        </span>
+        <span>WhatsApp</span>
+      </a>
+      <a class="contact-item" href="#" target="_blank" rel="noopener">
+        <span class="contact-item__icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 15.5 9 8l4 5 3-3.5L20 15.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4"/></svg>
+        </span>
+        <span>Rappi</span>
+      </a>
+      <a class="contact-item" href="#" target="_blank" rel="noopener">
+        <span class="contact-item__icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 17V9l7-4 7 4v8" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M9 17v-4h6v4" stroke="currentColor" stroke-width="1.4"/></svg>
+        </span>
+        <span>DiDi Food</span>
+      </a>
+      <a class="contact-item" href="#" target="_blank" rel="noopener">
+        <span class="contact-item__icon">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="3.6" stroke="currentColor" stroke-width="1.4"/><circle cx="16.3" cy="7.7" r="0.9" fill="currentColor"/></svg>
+        </span>
+        <span>Instagram</span>
+      </a>
+      <a class="contact-item" href="#" target="_blank" rel="noopener">
+        <span class="contact-item__icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-6.5-5.6-6.5-10.5A6.5 6.5 0 0 1 12 4a6.5 6.5 0 0 1 6.5 6.5C18.5 15.4 12 21 12 21Z" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="10.3" r="2.1" stroke="currentColor" stroke-width="1.4"/></svg>
+        </span>
+        <span>Ubicación</span>
+      </a>
+      <a class="contact-item" href="#">
+        <span class="contact-item__icon">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.4"/><path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </span>
+        <span>Horarios</span>
+      </a>
     </div>
-  </div>
-</section>
 
-<!-- ============ PROXIMA ETAPA ============ -->
-<section class="roadmap" id="futuro">
-  <div class="roadmap-inner">
-    <h2 class="section-heading">Hacia dónde puede crecer esto</h2>
-    <p class="section-lead">El catálogo funciona hoy tal como está. Cuando tenga sentido para el negocio, este es el camino natural para llevarlo un paso más allá — no forma parte de la propuesta actual, es solo la dirección a futuro.</p>
-
-    <div class="roadmap-flow">
-      <div class="roadmap-step is-current">
-        <span class="roadmap-label">Catálogo digital</span>
-        <span class="roadmap-note">Lo que estás viendo hoy</span>
+    <div class="qr-block">
+      <div class="qr-block__code" aria-hidden="true">
+        <span class="ph-tag ph-tag--sm">QR</span>
       </div>
-      <div class="roadmap-arrow" aria-hidden="true">↓</div>
-      <div class="roadmap-step">
-        <span class="roadmap-label">Menú online</span>
-      </div>
-      <div class="roadmap-arrow" aria-hidden="true">↓</div>
-      <div class="roadmap-step">
-        <span class="roadmap-label">Carrito de compra</span>
-      </div>
-      <div class="roadmap-arrow" aria-hidden="true">↓</div>
-      <div class="roadmap-step">
-        <span class="roadmap-label">Pedido</span>
-      </div>
-      <div class="roadmap-arrow" aria-hidden="true">↓</div>
-      <div class="roadmap-step">
-        <span class="roadmap-label">WhatsApp · Rappi · DiDi</span>
-      </div>
+      <p>Escanea para guardar el catálogo o pedir desde tu celular</p>
     </div>
-    <p class="roadmap-footnote">Una posibilidad futura, no una promesa de esta propuesta.</p>
-  </div>
-</section>
 
-<!-- ============ CIERRE ============ -->
-<section class="closing" id="siguiente-paso">
-  <div class="closing-inner">
-    <h2 class="section-heading light">¿Seguimos con el siguiente paso?</h2>
-    <p class="section-lead light">Con tu logo en alta resolución, tus fotografías y tus enlaces de WhatsApp, Rappi, DiDi e Instagram, este concepto se convierte en el catálogo definitivo de Toshiko, listo para compartir con tus clientes.</p>
-    <div class="closing-actions">
-      <a href="#" class="btn-gold">Conversemos por WhatsApp</a>
-      <a href="#" class="btn-ghost">Ver Instagram de Toshiko</a>
+    <a class="btn btn--gold btn--block btn--lg" href="#" target="_blank" rel="noopener">Pedir ahora por WhatsApp</a>
+
+    <div class="info-block">
+      <p><strong>Dirección</strong> — Placeholder: dirección real de Toshiko Sushi, Cali</p>
+      <p><strong>Horario</strong> — Placeholder: horario real de atención</p>
     </div>
-    <p class="closing-note">Enlaces reales pendientes de confirmar con el restaurante.</p>
+  </section>
+
+  <!-- PRÓXIMA ETAPA -->
+  <section class="roadmap" id="futuro">
+    <p class="eyebrow">Próxima etapa</p>
+    <h2 class="section-title">Hacia dónde puede crecer esto</h2>
+    <p class="section-sub">
+      Este catálogo puede ser el primer paso hacia una página propia de
+      Toshiko Sushi. Es solo una idea a futuro — no forma parte de este
+      catálogo ni implica ningún desarrollo en curso.
+    </p>
+
+    <ol class="roadmap__steps">
+      <li><span>Catálogo digital</span></li>
+      <li><span>Menú online</span></li>
+      <li><span>Carrito de compra</span></li>
+      <li><span>Confirmación de pedido</span></li>
+      <li><span>WhatsApp / Rappi / DiDi</span></li>
+    </ol>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__mark">TS</div>
+    <p>Toshiko Sushi — Cali, Colombia</p>
+    <p class="footer__note">Propuesta de catálogo digital · logo, fotografías, productos y precios reales pendientes de reemplazo</p>
+  </footer>
+
+  <!-- BARRA INFERIOR FIJA (mobile) -->
+  <div class="bottombar">
+    <a href="#menu">Menú</a>
+    <a class="bottombar__cta" href="#contacto">Pedir ahora</a>
+    <a href="#" target="_blank" rel="noopener">WhatsApp</a>
   </div>
-</section>
 
-<footer class="footer">
-  <p>Toshiko Sushi — Propuesta de catálogo digital · Cali, Colombia</p>
-</footer>
+</div>
 
-<script src="assets/js/main.js"></script>
 </body>
 </html>
